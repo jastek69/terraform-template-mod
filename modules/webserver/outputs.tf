@@ -1,3 +1,10 @@
 output "instance" {
-    value = aws_instance.tmmc-vpc.instance_public_ip
+    value = aws_instance.myapp-server
 }
+
+
+/*
+output "aws_ami" {
+    value = data.aws_ami.latest-amazon-linux-image
+}
+*/

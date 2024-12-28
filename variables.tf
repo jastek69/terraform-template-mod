@@ -4,3 +4,5 @@ variable vpc_cidr_blocks {}
 variable avail_zone {}
 variable env_prefix {}
 variable instance_type {} # for AMI t2 or t3 micro
+variable image_name {} # for AMI
+variable key_name {} # for AMI
