@@ -4,12 +4,7 @@ Webserver Module consists of:
     * Key pair -> use key_name = "MyLinuxBox" 
 * Security Group for the Firewalls - resource
 
-
 */
-
-
-
-
 
 /*******************************************************************************/
 # Security Groups - Firewall Settings
@@ -114,7 +109,9 @@ resource "aws_instance" "myapp-server" {
     ]
 
     associate_public_ip_address = true # 
-    availability_zone = var.avail_zone[0].az
+    
+    availability_zone = var.avail_zone
+
     # key_name = "MyLinuxBox"
     key_name = var.key_name
     
